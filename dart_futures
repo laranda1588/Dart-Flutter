@@ -1,0 +1,21 @@
+void main(){
+  
+  print('Antes de la Peticion');
+  
+  httpGet('http://api.nasa.com/aliens')
+    .then((data){
+      print(data.toUpperCase());
+    });
+  
+  
+  
+  print('Fin del Programa');
+  
+  
+}
+
+Future<String> httpGet(String url) {
+  return Future.delayed(  Duration( seconds: 3),(){
+    return 'Hola Mundo - 3 segundos';
+  });
+}
