@@ -1,0 +1,16 @@
+void main() {
+  final cuadrado = new Cuadrado(5);
+  
+  print('area: ${ cuadrado.calculaArea()}');
+}
+
+class Cuadrado {
+  double lado;
+  
+  Cuadrado(double lado):
+    this.lado = lado;
+  
+  double calculaArea(){
+    return this.lado * this.lado;
+  }
+}
